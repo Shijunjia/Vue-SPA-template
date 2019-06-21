@@ -8,18 +8,25 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// @ 指向 /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import { apiName } from '@/request/api.js'
+
+// 导入一个api.js中暴露出的接口
+// import { apiName } from '@/request/api.js'
 
 export default {
   name: 'home',
   components: {
     HelloWorld
+  },
+  created: function () {
+    // 使用接口
+    // apiName()
   }
 }
 </script>
 
+<!-- 添加 "scoped" 属性把样式限制在组件内 -->
 <style scoped>
 img {
   width: 100%;
