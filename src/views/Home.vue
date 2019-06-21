@@ -1,13 +1,16 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Vue.js游乐场"/>
+    <!-- 一个 vant button 组件 -->
+    <van-button to="/about">关于本项目</van-button>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
+import { apiName } from '@/request/api.js'
 
 export default {
   name: 'home',
@@ -16,3 +19,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+img {
+  width: 100%;
+  max-width: 1280px;
+}
+button {
+  margin-top: 40px;
+}
+</style>
