@@ -11,8 +11,8 @@
 // @ 指向 /src
 import HelloWorld from '@/components/HelloWorld.vue'
 
-// 导入一个api.js中暴露出的接口
-// import { apiName } from '@/request/api.js'
+// 导入一个@/request/api.js中暴露出的接口
+import { apiName } from '@/request/api.js'
 
 export default {
   name: 'home',
@@ -21,7 +21,13 @@ export default {
   },
   created: function () {
     // 使用接口
-    // apiName()
+    apiName()
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err =>{
+        console.log(err)
+      })
   }
 }
 </script>
