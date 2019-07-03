@@ -2,4 +2,4 @@
 import { get } from '@/request/request.js'
 
 // 设置接口地址，并并暴露出接口
-export const apiName = (params) => get('/mock/rank', params)
+export const apiName = (params) => get('/api/adress', params)
