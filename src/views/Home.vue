@@ -3,6 +3,9 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Vue.js游乐场"/>
     <!-- 一个 vant button 组件 -->
+    <div>
+      <p>下面的按钮使用了vant组件库</p>
+    </div>
     <van-button to="/about">关于本项目</van-button>
   </div>
 </template>
@@ -34,11 +37,11 @@ export default {
 
 <!-- 添加 "scoped" 属性把样式限制在组件内 -->
 <style scoped>
+.home {
+  text-align: center;
+}
 img {
   width: 100%;
   max-width: 1280px;
-}
-button {
-  margin-top: 40px;
 }
 </style>
